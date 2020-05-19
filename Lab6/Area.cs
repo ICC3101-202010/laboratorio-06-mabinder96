@@ -10,10 +10,11 @@ namespace Lab6
     public class Area : Division
 
     {
-        public Area(string name, Persona inCharge) 
+        public Area(Persona inCharge) 
         {
             this.Name = "Area";
             this.InCharge = inCharge;
         }
+
     }
 }

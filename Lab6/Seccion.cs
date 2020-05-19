@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 namespace Lab6
 {
     [Serializable]
-    public class Seccion : Division
+    public class Seccion : Departamento
 
     {
-        public Seccion(string name, Persona inCharge)
+
+        public Seccion(Persona inCharge) : base(inCharge)
         {
             this.Name = "Seccion";
             this.InCharge = inCharge;
         }
+
     }
 }

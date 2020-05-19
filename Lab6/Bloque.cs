@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 namespace Lab6
 {
     [Serializable]
-    public class Bloque : Division
+    public class Bloque : Seccion
 
     {
-
-        public Bloque(string name, Persona inCharge, List<Persona> personas)
+        public Bloque(Persona inCharge, List<Persona> personas) : base(inCharge)
         {
             this.Name = "Bloque";
             this.InCharge = inCharge;
-            this.Personas= personas;
+            this.Personas = personas;
         }
-
     }
 }
